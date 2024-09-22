@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Reservation Approval System</h2>
+        <form id="reservationForm">
+            <label for="reservationId">Reservation ID:</label>
+            <input type="text" id="reservationId" required>
+
+            <label for="roomType">Room Type:</label>
+            <select id="roomType">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="status">Reservation Status:</label>
+            <select id="status">
+                <option value="approve">Approve</option>
+                <option value="reject">Reject</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output" class="output">
+            <!-- Output for admin will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
